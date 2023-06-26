@@ -23,9 +23,14 @@
 1. Decide retail price
 1. Issue and assign ISBN
     * https://www.nielsenisbnstore.com/
+1. Generate EAN-13 ISBN barcode with zint
+    * https://en.wikipedia.org/wiki/International_Article_Number
+    * https://github.com/zint/zint
 1. Supply book data
     * https://www.nielsentitleeditor.com/
 1. Produce HTML files and create epub
+1. Validate epub using epubcheck
+    * https://github.com/w3c/epubcheck
 1. Add book files on website
 
 ## Coding practices
@@ -44,3 +49,5 @@
 * We follow the [EPUB 3.3 specification](https://www.w3.org/TR/epub-33/).
 * We compile using Zip 3.0 (July 5th 2008), by Info-ZIP, bundled with macOS.
     * With `-X` attribute: Do  not save extra file attributes (Extended Attributes on OS/2, uid/gid and file times on Unix).
+* We validate using epubcheck.
+    * https://github.com/w3c/epubcheck
